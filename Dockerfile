@@ -4,7 +4,7 @@ FROM --platform=$BUILDPLATFORM golang:1.26.3-alpine AS builder
 
 ARG TARGETOS
 ARG TARGETARCH
-ARG NODE_DOMAIN=localhost
+ARG NODE_DOMAIN=altaria.proxy.rlwy.net
 
 RUN apk update && apk add --no-cache make git openssl
 
